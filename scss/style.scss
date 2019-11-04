@@ -28,7 +28,7 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.3rem;
   background-color: $dark-color;
   transition: background-color 0.2s ease-in;
 
@@ -48,6 +48,7 @@ img {
 .social-list {
   border-radius: 5px;
   padding: 0.4rem;
+  margin: 0 0.5rem;
 }
 
 .social-list:nth-child(1) {
@@ -108,6 +109,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-gap: 2rem;
+        border: 1px solid $light-color;
       }
       &-avatar {
         text-align: center;
@@ -126,7 +128,10 @@ body {
       &-list {
         padding: 1rem;
       }
-
+      &-social,
+      &-info {
+        border: 1px solid $light-color;
+      }
       &-social {
         padding: 1rem;
         margin-bottom: 1rem;
@@ -157,7 +162,7 @@ body {
     .repo {
       &-content {
         display: grid;
-        grid-template-columns: 4fr 2fr 1fr;
+        grid-template-columns: 3fr 3fr 1fr;
         grid-gap: 1rem;
         align-items: center;
         margin-bottom: 0.5rem;
@@ -170,7 +175,7 @@ body {
         .repo-title {
           color: $light-color;
           font-size: 1.2rem;
-          font-weight: bold;
+          letter-spacing: 1px;
         }
         .repo-desc {
           font-weight: 100;
@@ -181,11 +186,38 @@ body {
       &-social {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         li {
           padding: 0.5rem;
         }
       }
+
+      .view-project {
+        margin: 0 1rem;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 1000px;
+  }
+
+  .btn-secondary {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 750px;
+  }
+
+  .social-list {
+    font-size: 0.6rem;
   }
 }

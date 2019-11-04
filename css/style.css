@@ -26,7 +26,7 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.3rem;
   background-color: #1c1d1d;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
@@ -47,6 +47,7 @@ img {
 .social-list {
   border-radius: 5px;
   padding: 0.4rem;
+  margin: 0 0.5rem;
 }
 
 .social-list:nth-child(1) {
@@ -103,6 +104,7 @@ body {
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
   grid-gap: 2rem;
+  border: 1px solid #f4f4f4;
 }
 
 .section-results .profile-avatar {
@@ -122,6 +124,10 @@ body {
 
 .section-results .profile-list {
   padding: 1rem;
+}
+
+.section-results .profile-social, .section-results .profile-info {
+  border: 1px solid #f4f4f4;
 }
 
 .section-results .profile-social {
@@ -161,8 +167,8 @@ body {
 .section-results .repo-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 2fr 1fr;
-      grid-template-columns: 4fr 2fr 1fr;
+  -ms-grid-columns: 3fr 3fr 1fr;
+      grid-template-columns: 3fr 3fr 1fr;
   grid-gap: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -178,7 +184,7 @@ body {
 .section-results .repo-project-info .repo-title {
   color: #f4f4f4;
   font-size: 1.2rem;
-  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .section-results .repo-project-info .repo-desc {
@@ -194,12 +200,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .section-results .repo-social li {
   padding: 0.5rem;
+}
+
+.section-results .repo .view-project {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 1000px;
+  }
+  .btn-secondary {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 750px;
+  }
+  .social-list {
+    font-size: 0.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
