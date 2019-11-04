@@ -47,7 +47,6 @@ const uiCtrl = (() => {
       return uiSelector;
     },
     showProfile: data => {
-      console.log(data);
       //clear section results every new search
       result.innerHTML = '';
 
@@ -161,7 +160,7 @@ const app = ((github, ui) => {
           //Show profile
           ui.showProfile(data.profile);
           //Show repo
-          //   ui.showRepo(data.repo);
+          ui.showRepo(data.repo);
         }
       });
     }
