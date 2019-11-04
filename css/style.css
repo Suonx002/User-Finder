@@ -282,6 +282,7 @@ body {
   }
   .section-results .profile-social li {
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   .section-results .profile-info {
     -ms-grid-columns: 1fr;

@@ -126,21 +126,30 @@ const uiCtrl = (() => {
     },
 
     showAlert: message => {
+      //clear alert
+      uiCtrl.clearAlert();
+
       // create a div
       const div = document.createElement('div');
       div.className = 'danger';
       div.appendChild(document.createTextNode(`User ${message}`));
+      console.log(div);
 
       //insert before search input
       document
         .querySelector(uiSelector.searchInput)
-        .insertAdjacentHTML('beforebegin', div);
+        .insertAdjacentElement('beforebegin', div);
 
+      //Set time out for 2 seconds
       setTimeout(() => {
-        if (div.className === 'danger') {
-          div.classList.remove('danger');
-        }
+        uiCtrl.clearAlert();
       }, 1500);
+    },
+    clearAlert() {
+      const currentAlert = document.querySelector('.danger');
+      if (currentAlert) {
+        currentAlert.remove();
+      }
     }
   };
 })();
