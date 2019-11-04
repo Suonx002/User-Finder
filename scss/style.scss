@@ -73,7 +73,7 @@ body {
 // Header section
 .header {
   &-section {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   &-content {
@@ -201,23 +201,76 @@ body {
 
 @media screen and (max-width: 1050px) {
   .container {
-    width: 1000px;
+    max-width: 95%;
+  }
+  .social-list {
+    font-size: 0.8rem;
   }
 
   .btn-secondary {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.5rem 0.5rem;
     margin-right: 0.5rem;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .container {
-    width: 750px;
+@media screen and (max-width: 780px) {
+  .section {
+    &-results {
+      .profile-content {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      .repo {
+        &-content {
+          grid-template-columns: 1fr;
+          grid-gap: 0;
+          .view-project {
+            margin: 1rem auto;
+            a {
+              padding: 0.5rem 5.5rem;
+              margin: 0;
+            }
+          }
+        }
+        &-social {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    &-section {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .search-input {
+        font-size: 0.72rem;
+        width: 100%;
+      }
+    }
   }
 
-  .social-list {
-    font-size: 0.6rem;
+  .section {
+    &-results {
+      .profile {
+        &-social {
+          flex-direction: column;
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+        &-info {
+          grid-template-columns: 1fr;
+          grid-gap: 0;
+        }
+      }
+    }
   }
 }
