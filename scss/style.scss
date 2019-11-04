@@ -1,0 +1,17 @@
+@import 'config';
+
+// General styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: $max-width;
+}
+
+body {
+  background-color: $primary-color;
+}
