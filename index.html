@@ -11,12 +11,14 @@
     <header class="header-section">
       <div class="container header-content">
         <h2>Github Finder</h2>
-        <p class="lead">
-          Enter a username to fetch github profile and repositories
-        </p>
-        <input type="text" class="search-input" />
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Enter a username to fetch github profile and repositories"
+        />
       </div>
     </header>
+
     <section class="section-results">
       <div class="container">
         <div class="profile-content">
@@ -34,41 +36,78 @@
               >View Profile</a
             >
           </div>
-          <ul class="profile-social">
-            <li class="social-list">Followers: 170</li>
-            <li class="social-list">Following: 17</li>
-            <li class="social-list">Public Repos: 10</li>
-            <li class="social-list">Public Gists: 15</li>
+          <div class="profile-list">
+            <ul class="profile-social">
+              <li class="social-list">Followers: 170</li>
+              <li class="social-list">Following: 17</li>
+              <li class="social-list">Public Repos: 10</li>
+              <li class="social-list">Public Gists: 15</li>
+            </ul>
+            <ul class="profile-info">
+              <li>Bio: <em>Something</em></li>
+              <li>Company: <em>Target</em></li>
+              <li>Location: <em>Minneapolis, MN</em></li>
+              <li>Blog: <em>VuthySuon.com</em></li>
+              <li>Email: <em>suonx002@gmail.com</em></li>
+              <li>Created At: <em>11/05/2017</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container repo-section">
+        <div class="repo-content">
+          <div class="repo-project-info">
+            <p class="repo-title">Adventure Search:</p>
+            <p class="repo-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              adipisci officia ex ea nisi assumenda possimus, aspernatur
+              voluptatum corrupti magnam.
+            </p>
+          </div>
+          <ul class="repo-social">
+            <li class="social-list">Watchers: 15</li>
+            <li class="social-list">Stars: 10</li>
+            <li class="social-list">Forks: 100</li>
           </ul>
-          <ul class="profile-info">
-            <li>
-              <span class="profile-info-title">Company: </span>
-              <span class="profile-info-desc">Target</span>
-            </li>
-            <li>
-              <span class="profile-info-title">Location: </span>
-              <span class="profile-info-desc">Minneapolis, MN</span>
-            </li>
-            <li>
-              <span class="profile-info-title">Blog: </span>
-              <span class="profile-info-desc">VuthySuon.com</span>
-            </li>
-            <li>
-              <span class="profile-info-title">Email: </span>
-              <span class="profile-info-desc">suonx002@gmail.com</span>
-            </li>
-            <li>
-              <span class="profile-info-title">Created At: </span>
-              <span class="profile-info-desc">11/05/2017</span>
-            </li>
-          </ul>
+          <div class="view-project">
+            <a
+              href="https://api.github.com/repos/Suonx002/adventure-search"
+              class="btn btn-secondary"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
         </div>
         <div class="repo-content">
           <div class="repo-project-info">
             <p class="repo-title">Adventure Search:</p>
             <p class="repo-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-              autem.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              adipisci officia ex ea nisi assumenda possimus, aspernatur
+              voluptatum corrupti magnam.
+            </p>
+          </div>
+          <ul class="repo-social">
+            <li class="social-list">Watchers: 15</li>
+            <li class="social-list">Stars: 10</li>
+            <li class="social-list">Forks: 100</li>
+          </ul>
+          <div class="view-project">
+            <a
+              href="https://api.github.com/repos/Suonx002/adventure-search"
+              class="btn btn-secondary"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="repo-content">
+          <div class="repo-project-info">
+            <p class="repo-title">Adventure Search:</p>
+            <p class="repo-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              adipisci officia ex ea nisi assumenda possimus, aspernatur
+              voluptatum corrupti magnam.
             </p>
           </div>
           <ul class="repo-social">
