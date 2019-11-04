@@ -64,6 +64,14 @@ img {
   background-color: $success-color;
 }
 
+.danger {
+  display: block;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  width: 97%;
+  background-color: $danger-color;
+}
+
 body {
   background-color: $primary-color;
   line-height: 1.5;
@@ -79,7 +87,7 @@ body {
   &-content {
     text-align: center;
 
-    padding: 1rem;
+    padding: 0.5rem;
     h2,
     .search-input {
       margin-bottom: 0.75rem;
@@ -87,7 +95,6 @@ body {
 
     h2 {
       padding: 1rem;
-
       font-size: 2.5rem;
     }
 
@@ -176,6 +183,7 @@ body {
           color: $light-color;
           font-size: 1.2rem;
           letter-spacing: 1px;
+          margin-bottom: 0.5rem;
         }
         .repo-desc {
           font-weight: 100;
@@ -233,6 +241,12 @@ body {
               padding: 0.5rem 5.5rem;
               margin: 0;
             }
+          }
+        }
+        &-project-info {
+          .repo-title,
+          .repo-desc {
+            text-align: center;
           }
         }
         &-social {
